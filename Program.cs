@@ -15,12 +15,9 @@ namespace SessionWork
             //l.Filter18YearsOld();
             //l.CountCharacterOccurrences();
             //l.AggregateOperations();
-            //l.FindWordsStartsWithA();
+            l.FindWordsStartsWithA();
             //l.FindTop3Scores();
-            l.GroupPersonsByAge();
-
-
-
+            //l.GroupPersonsByAge();
 
 
 

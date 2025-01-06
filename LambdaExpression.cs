@@ -19,8 +19,9 @@ namespace SessionWork
                 new Person { Name = "David", Age = 16 }
             };
 
-            var filteredPersons = persons.Where(p => p.Age >= 18).ToList();
-
+            //var filteredPersons = persons.Where(p => p.Age >= 18).ToList();
+            var filteredPersons = persons.FindAll(p => p.Age >= 18);
+            
             Console.WriteLine("Person with age above or equal to 18: ");
             foreach (var person in filteredPersons)
             {
