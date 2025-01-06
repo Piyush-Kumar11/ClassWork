@@ -72,13 +72,21 @@ namespace SessionWork
         public void FindTop3Scores()
         {
             var scores = new List<int> { 15, 55, 25, 35, 45, 54, 88 };
-            var sortedScores = scores.OrderByDescending(s => s).ToList();
 
-            Console.WriteLine("Top 3 highest scores:");
-            for (int i = 0; i < 3 && i < sortedScores.Count; i++)
+            var sortedScores = scores.OrderByDescending(s => s).Take(3);
+            foreach (var item in sortedScores)
             {
-                Console.WriteLine(sortedScores[i]);
+                Console.WriteLine(item);
             }
+
+            //---------------------OR------------------------
+
+            //var sortedScores = scores.OrderByDescending(s => s).ToList();
+            //Console.WriteLine("Top 3 highest scores:");
+            //for (int i = 0; i < 3 && i < sortedScores.Count; i++)
+            //{
+            //    Console.WriteLine(sortedScores[i]);
+            //}
         }
 
         //6) Write a program that groups a list of Person objects by their age using LINQ.
@@ -96,6 +104,7 @@ namespace SessionWork
             var groupByAge = persons.GroupBy(p => p.Age);
             foreach (var group in groupByAge)
             {
+                //Group(Key,Element) 
                 Console.WriteLine($"Age Group: {group.Key}");
                 foreach (var person in group)
                 {
