@@ -11,16 +11,28 @@ namespace SessionWork
     {
         static void Main(string[] args)
         {
-            LambdaExpression l = new LambdaExpression();
-            //l.Filter18YearsOld();
-            //l.CountCharacterOccurrences();
-            //l.AggregateOperations();
-            l.FindWordsStartsWithA();
-            //l.FindTop3Scores();
-            //l.GroupPersonsByAge();
+            //FileInputOutput.MergeTxtFiles();
+            //FileInputOutput.StudentRecords();
+            FileInputOutput.TextEditor();
 
 
 
+
+
+
+
+
+
+
+
+
+            //LambdaExpression l = new LambdaExpression();
+            ////l.Filter18YearsOld();
+            ////l.CountCharacterOccurrences();
+            ////l.AggregateOperations();
+            //l.FindWordsStartsWithA();
+            ////l.FindTop3Scores();
+            ////l.GroupPersonsByAge();
 
 
             //Customer customer = new Customer
